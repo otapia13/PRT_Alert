@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SettingsController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label text="Time Interval" />
+                  <ChoiceBox prefWidth="150.0" />
+                  <Label text="mins" />
+               </children>
+            </HBox>
+            <TableView fx:id="settingsTableView" editable="true" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="nameCol" maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Name" />
+                <TableColumn fx:id="urlCol" maxWidth="-1.0" minWidth="-Infinity" prefWidth="-1.0" resizable="false" text="URL or IP" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Insert" />
+                  <Button mnemonicParsing="false" text="Delete" />
+                  <Button mnemonicParsing="false" text="Close" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,176 @@
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainController implements Initializable{
+
+    @FXML
+    Label eiStatus, immobiStatus, serviceStatus, modelStatus, printerStatus, consoleLabel;
+    @FXML
+    CheckMenuItem immobiMenuItem, eiMenuItem, modelChangeMenuItem, printerMenuItem;
+    @FXML
+    MenuItem start, stop, close, emailSettings, immobiSettings, eiSettings, printerSettings,
+    modelChangeSettings, showConsole, resize;
+    @FXML
+    TextArea console;
+    @FXML
+    VBox consoleVBox;
+    @FXML
+    GridPane statsGridPane;
+
+    //Scene stage;
+
+
+    private void resize(int w, int h) {
+        Stage stage = (Stage)console.getScene().getWindow();
+
+        stage.setHeight(h);
+        stage.setWidth(w);
+    }
+    private void setMins(int w, int h){
+        Stage stage = (Stage)console.getScene().getWindow();
+        stage.setMinWidth(w);
+        stage.setMinHeight(h);
+    }
+
+    private void setMaxs(int w, int h){
+        Stage stage = (Stage)console.getScene().getWindow();
+        stage.setMaxHeight(h);
+        stage.setMaxWidth(w);
+    }
+
+    public void showConsole(){
+        //disable console
+        if (consoleVBox.isVisible()){
+            consoleVBox.setVisible(false);
+            consoleVBox.setMaxSize(0,0);
+            this.setMaxs(600,400);
+            this.setMins(400, 300);
+            statsGridPane.setMaxHeight(10000);
+            showConsole.setText("Show Console");
+        }
+        else{// enable conseole
+            consoleVBox.setVisible(true);
+            consoleVBox.setMaxSize(10000,10000);
+            this.setMins(600, 400);
+            this.setMaxs(1000,1000);
+            statsGridPane.setMaxHeight(100);
+            showConsole.setText("Hide Console");
+        }
+    }
+
+    public void close(){
+        //save settings
+        Platform.exit();
+        System.exit(0);
+    }
+
+    public void runImmobi(){
+        if(immobiMenuItem.isSelected())
+            immobiStatus.setText("Running");
+        else
+            immobiStatus.setText("Not Running");
+    }
+
+    public void runPrinter(){
+        if(printerMenuItem.isSelected())
+            printerStatus.setText("Running");
+        else
+            printerStatus.setText("Not Running");
+    }
+
+    public void runEI(){
+        if(eiMenuItem.isSelected())
+            eiStatus.setText("Running");
+        else
+            eiStatus.setText("Not Running");
+    }
+
+    public void runModelChange(){
+        if(modelChangeMenuItem.isSelected())
+            modelStatus.setText("Running");
+        else
+            modelStatus.setText("Not Running");
+    }
+
+    public void emailSettings(){
+        settings("Email Settings");
+    }
+
+    public void immobiSettings(){
+        settings("Immobi Settings");
+    }
+
+    public void eiSettings(){
+        settings("EI Threads Settings");
+    }
+
+    public void printerSettings(){
+        settings("Printer Settings");
+    }
+
+    public void modelChangeSettings(){
+        settings("Model Change Settings");
+    }
+
+    public void printSampleConfig(){
+        FileIO sampleConfig = new FileIO("sampleConfig."+this.getClass().getName()+".txt");
+        sampleConfig.write();
+        sampleConfig.writeLine("!This is a comment");
+        sampleConfig.writeLine("!"+ this.getClass().getName());
+        sampleConfig.writeLine("#IM");
+        sampleConfig.writeLine("IMMOBI1|url.com");
+        sampleConfig.writeLine("#END_IM");
+        sampleConfig.writeLine("#EI");
+        sampleConfig.writeLine("#END_EI");
+        sampleConfig.writeLine("#PMK");
+        sampleConfig.writeLine("#END_PMK");
+        sampleConfig.writeLine("#MC");
+        sampleConfig.writeLine("#END_MC");
+        sampleConfig.close();
+
+    }
+
+
+    public void settings(String title) {
+
+        Stage settingsWindow = new Stage();
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("Settings.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        settingsWindow.setTitle(title);
+        settingsWindow.setScene(new Scene(root));
+        settingsWindow.show();
+        settingsWindow.setOnCloseRequest(event -> {
+            settingsWindow.close();
+            //save info before exiting
+            });
+        }
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        //this.showConsole();
+        immobiMenuItem.setSelected(true);
+        //get saved states and update them.
+    }
+}
