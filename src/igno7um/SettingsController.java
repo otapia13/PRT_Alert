@@ -1,3 +1,5 @@
+package igno7um;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;

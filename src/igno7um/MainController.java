@@ -1,3 +1,5 @@
+package igno7um;
+
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -149,7 +151,7 @@ public class MainController implements Initializable{
     public void settings(String title) {
 
         Stage settingsWindow = new Stage();
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("Settings.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("igno7um/Settings.fxml"));
         Parent root = null;
         try {
             root = loader.load();

@@ -1,11 +1,11 @@
-import java.awt.*;
-import java.io.File;
+package igno7um;
 
 /**
  * Created by vfc90279 on 1/25/2017.
  * Gets configurations from config.txt file
  *
  */
+
 public class Configuration {
 
     Configuration(){
