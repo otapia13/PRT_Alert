@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/Alert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/Log.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/PrefSaver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Configuration.java" afterPath="$PROJECT_DIR$/src/igno7um/Configuration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/FileIO.java" afterPath="$PROJECT_DIR$/src/igno7um/FileIO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Main.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/igno7um/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MainController.java" afterPath="$PROJECT_DIR$/src/igno7um/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Settings.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Settings.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SettingsController.java" afterPath="$PROJECT_DIR$/src/igno7um/SettingsController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/URLGrep.java" afterPath="$PROJECT_DIR$/src/igno7um/URLGrep.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRT Alert.iml" afterPath="$PROJECT_DIR$/PRT Alert.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/EventTimer.java" afterPath="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
     </list>
     <ignored path="PRT Alert.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,18 +84,28 @@
       <file leaf-file-name="EventTimer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/igno7um/EventTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -607,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487621310389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a lot off stuff...">
+      <created>1487637363741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487637363741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -688,7 +691,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added URLGrep" />
-    <option name="LAST_COMMIT_MESSAGE" value="added URLGrep" />
+    <MESSAGE value="added a lot off stuff..." />
+    <option name="LAST_COMMIT_MESSAGE" value="added a lot off stuff..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,18 +1202,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/EventTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
           </folding>
         </state>
       </provider>
