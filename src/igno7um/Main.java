@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("igno7um/Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         primaryStage.setTitle("PRT Alert");
         primaryStage.setScene(new Scene(root, 600, 300));
         primaryStage.show();

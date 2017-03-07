@@ -10,18 +10,17 @@ public class EventTimer {
     private Timer timer;
     private static int counter;
     private long msTime = 60000;    //run every minute by default
-    private int imInterval;
-    private int eiInterval;
-    private int pmkInterval;
-    private int mcInterval;
-    private int ex1Interval;    //additional feature in case it's needed
-    private int ex2Interval;    //additional feature 2
-    private int ex3Interval;    //additional feature 3
+    private int imInterval = 10;    //default 10 mins in case settings file is not found
+    private int eiInterval = 10;
+    private int pmkInterval = 10;
+    private int mcInterval = 10;
+    private int ex1Interval = 10;    //additional feature in case it's needed
+    private int ex2Interval = 10;    //additional feature 2
+    private int ex3Interval = 10;    //additional feature 3
 
     public void setIMinterval(int i){
         imInterval = i;
     }
-
     public void setEIinterval(int i){
         eiInterval = i;
     }
@@ -45,6 +44,9 @@ public class EventTimer {
         return msTime;
     }
 
+
+    Configuration config = new Configuration();
+
     private int x = 0;
     public void start(){
         timer = new Timer();
@@ -57,8 +59,9 @@ public class EventTimer {
 
             public void activator(){
                 x++;
-                if (x % imInterval == 0){
-                    //runImmobi
+                if (x%imInterval == 0){
+                    config.runServices(1);
+                    System.out.println("this ran" + x);
                 }
                 if (x%eiInterval == 0){
                     //runEI

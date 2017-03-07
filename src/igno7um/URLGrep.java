@@ -33,7 +33,7 @@ public class URLGrep {
 
 
     //returns line containing string "str"
-    public String findNext(String str) throws IOException {
+    public String findNext(String str) {
         setSearchString(str);
         String currentLine;
         while(!this.eof()) {
@@ -43,7 +43,7 @@ public class URLGrep {
             }
 
         }
-        return str + " not found";
+        return null;
     }
 
     //returns the extracted string between specified characters.

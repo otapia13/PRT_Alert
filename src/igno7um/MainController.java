@@ -13,7 +13,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +34,9 @@ public class MainController implements Initializable{
     GridPane statsGridPane;
 
     //Scene stage;
+
+    private PrefSaver prefSaver = new PrefSaver();
+    GlobalSettings globalSettings = new GlobalSettings();
 
 
     private void resize(int w, int h) {
@@ -65,7 +67,7 @@ public class MainController implements Initializable{
             statsGridPane.setMaxHeight(10000);
             showConsole.setText("Show Console");
         }
-        else{// enable conseole
+        else{// enable console
             consoleVBox.setVisible(true);
             consoleVBox.setMaxSize(10000,10000);
             this.setMins(600, 400);
@@ -76,37 +78,68 @@ public class MainController implements Initializable{
     }
 
     public void close(){
-        //save settings
+        prefSaver.setPref("Immobi", immobiMenuItem.isSelected());
+        prefSaver.setPref("EI", eiMenuItem.isSelected());
+        prefSaver.setPref("Printer", printerMenuItem.isSelected());
+        prefSaver.setPref("MC", modelChangeMenuItem.isSelected());
+
+        prefSaver.setPref("ImmobiStatus", immobiStatus.getText());
+        prefSaver.setPref("EIStatus", eiStatus.getText());
+        prefSaver.setPref("PrinterStatus", printerStatus.getText());
+        prefSaver.setPref("ModelStatus", modelStatus.getText());
+
+        prefSaver.setPref("ShowConsole", consoleVBox.isVisible());
+        prefSaver.setPref("ShowConsoleTXT", showConsole.getText());
+
         Platform.exit();
         System.exit(0);
     }
 
     public void runImmobi(){
-        if(immobiMenuItem.isSelected())
+        if(immobiMenuItem.isSelected()) {
             immobiStatus.setText("Running");
-        else
+            globalSettings.ImmobiSettings(true);
+        }
+        else {
             immobiStatus.setText("Not Running");
+            globalSettings.ImmobiSettings(false);
+
+        }
+
     }
 
     public void runPrinter(){
-        if(printerMenuItem.isSelected())
+        if(printerMenuItem.isSelected()) {
             printerStatus.setText("Running");
-        else
+            globalSettings.PrinterSettings(true);
+        }
+        else {
             printerStatus.setText("Not Running");
+            globalSettings.PrinterSettings(false);
+
+        }
     }
 
     public void runEI(){
-        if(eiMenuItem.isSelected())
+        if(eiMenuItem.isSelected()) {
             eiStatus.setText("Running");
-        else
+            globalSettings.EISettings(true);
+        }
+        else {
             eiStatus.setText("Not Running");
-    }
+            globalSettings.EISettings(false);
 
+        }
+    }
     public void runModelChange(){
-        if(modelChangeMenuItem.isSelected())
+        if(modelChangeMenuItem.isSelected()) {
             modelStatus.setText("Running");
-        else
+            globalSettings.ModelSettings(true);
+        }
+        else {
             modelStatus.setText("Not Running");
+            globalSettings.ModelSettings(false);
+        }
     }
 
     public void emailSettings(){
@@ -147,11 +180,18 @@ public class MainController implements Initializable{
 
     }
 
+    public void runService(){
+        Configuration c = new Configuration();
+        c.runServices();
+        EventTimer et = new EventTimer();
+        et.start();
+    }
 
-    public void settings(String title) {
+
+    public void settings(String title){
 
         Stage settingsWindow = new Stage();
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("igno7um/Settings.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("Settings.fxml"));
         Parent root = null;
         try {
             root = loader.load();
@@ -163,8 +203,8 @@ public class MainController implements Initializable{
         settingsWindow.setScene(new Scene(root));
         settingsWindow.show();
         settingsWindow.setOnCloseRequest(event -> {
+
             settingsWindow.close();
-            //save info before exiting
             });
         }
 
@@ -172,7 +212,25 @@ public class MainController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //this.showConsole();
-        immobiMenuItem.setSelected(true);
+        immobiMenuItem.setSelected(Boolean.parseBoolean(prefSaver.getPref("Immobi")));
+        eiMenuItem.setSelected(Boolean.parseBoolean(prefSaver.getPref("EI")));
+        printerMenuItem.setSelected(Boolean.parseBoolean(prefSaver.getPref("Printer")));
+        modelChangeMenuItem.setSelected(Boolean.parseBoolean(prefSaver.getPref("MC")));
+
+        immobiStatus.setText(prefSaver.getPref("ImmobiStatus"));
+        eiStatus.setText(prefSaver.getPref("EIStatus"));
+        printerStatus.setText(prefSaver.getPref("PrinterStatus"));
+        modelStatus.setText(prefSaver.getPref("ModelStatus"));
+
+        consoleVBox.setVisible(Boolean.parseBoolean(prefSaver.getPref("ShowConsole")));
+        showConsole.setText(prefSaver.getPref("ShowConsoleTXT"));
+
+        //Initialize your global settings to avoid exceptions
+        globalSettings.ImmobiSettings(immobiMenuItem.isSelected());
+        globalSettings.EISettings(eiMenuItem.isSelected());
+        globalSettings.PrinterSettings(printerMenuItem.isSelected());
+        globalSettings.ModelSettings(modelChangeMenuItem.isSelected());
+
         //get saved states and update them.
     }
 }

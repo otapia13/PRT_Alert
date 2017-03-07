@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="">
+    <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="added a lot off stuff...">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/DBConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/GlobalSettings.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$EITHREADS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$IMMOBI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$MODELCHANGE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$PRINTER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/FileIO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Main.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/MainController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Settings.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/SettingsController.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Configuration.java" afterPath="$PROJECT_DIR$/src/igno7um/Configuration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/EventTimer.java" afterPath="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Log.java" afterPath="$PROJECT_DIR$/src/igno7um/Log.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Main.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Main.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Main.java" afterPath="$PROJECT_DIR$/src/igno7um/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/MainController.java" afterPath="$PROJECT_DIR$/src/igno7um/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/PrefSaver.java" afterPath="$PROJECT_DIR$/src/igno7um/PrefSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Settings.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Settings.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/SettingsController.java" afterPath="$PROJECT_DIR$/src/igno7um/SettingsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/URLGrep.java" afterPath="$PROJECT_DIR$/src/igno7um/URLGrep.java" />
     </list>
     <ignored path="PRT Alert.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,38 +47,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/igno7um/Main.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="0">
+              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#resize#0;class#MainController#0" expanded="false" />
                 <element signature="method#setMins#0;class#MainController#0" expanded="false" />
                 <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-                <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-                <element signature="method#close#0;class#MainController#0" expanded="false" />
-                <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-                <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-                <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-                <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
                 <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-                <element signature="method#settings#0;class#MainController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalSettings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/igno7um/GlobalSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/igno7um/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,49 +86,20 @@
       <file leaf-file-name="PrefSaver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/igno7um/PrefSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventTimer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventTimer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/igno7um/EventTimer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="198">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,9 +108,28 @@
       <file leaf-file-name="SettingsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/igno7um/SettingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#printSampleConfig#0;class#Configuration#0" expanded="false" />
+                <element signature="method#extractConfigs#0;class#Configuration#0" expanded="false" />
+                <element signature="method#getConfiguration#0;class#Configuration#0" expanded="false" />
+                <element signature="method#addConfiguration#0;class#Configuration#0" expanded="false" />
+                <element signature="method#deleteConfiguration#0;class#Configuration#0" expanded="false" />
+                <element signature="method#printAll#0;class#Configuration#0" expanded="false" />
+                <element signature="method#runServices#0;class#Configuration#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,62 +137,19 @@
       <file leaf-file-name="URLGrep.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/igno7um/URLGrep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/igno7um/FileIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="-192">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/igno7um/Log.java">
+      <file leaf-file-name="sampleConfig.igno7um.Configuration.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sampleConfig.igno7um.Configuration.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/igno7um/Alert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-942">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#1899#1900#0" expanded="true" />
-                <element signature="e#1951#1952#0" expanded="true" />
-                <element signature="method#getConfiguration#0;class#Configuration#0" expanded="false" />
-                <element signature="method#addConfiguration#0;class#Configuration#0" expanded="false" />
-                <element signature="method#deleteConfiguration#0;class#Configuration#0" expanded="false" />
-                <element signature="method#printAll#0;class#Configuration#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,8 +187,19 @@
         <option value="$PROJECT_DIR$/src/Configuration.java" />
         <option value="$PROJECT_DIR$/src/SavePreferences.java" />
         <option value="$PROJECT_DIR$/src/igno7um/SavePreferences.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/Log.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/Main.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/GlobalSettings.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/Service.java" />
+        <option value="$PROJECT_DIR$/Config.txt" />
         <option value="$PROJECT_DIR$/src/igno7um/PrefSaver.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/MainController.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/SettingsController.java" />
         <option value="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
+        <option value="$PROJECT_DIR$/sampleConfig.igno7um.Configuration.txt" />
+        <option value="$PROJECT_DIR$/src/igno7um/URLGrep.java" />
+        <option value="$PROJECT_DIR$/src/igno7um/Configuration.java" />
       </list>
     </option>
   </component>
@@ -231,7 +212,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1203" />
+    <option name="width" value="1440" />
     <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -259,6 +240,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -298,8 +281,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,10 +300,10 @@
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="igno7um.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -610,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487637363741</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added a lot off stuff...">
+      <created>1487814319392</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487814319392</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -623,28 +611,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1203" height="822" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.50665486" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49334517" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.49334517" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19465977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15808298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -696,7 +684,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -705,51 +693,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#resize#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMins#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
-            <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#resize#0;class#MainController#0" expanded="false" />
             <element signature="method#setMins#0;class#MainController#0" expanded="false" />
             <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
             <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -765,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,14 +751,7 @@
             <element signature="method#resize#0;class#MainController#0" expanded="false" />
             <element signature="method#setMins#0;class#MainController#0" expanded="false" />
             <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
             <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,57 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#resize#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMins#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
-            <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/FileIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,14 +793,7 @@
             <element signature="method#resize#0;class#MainController#0" expanded="false" />
             <element signature="method#setMins#0;class#MainController#0" expanded="false" />
             <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
             <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -915,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,14 +835,7 @@
             <element signature="method#resize#0;class#MainController#0" expanded="false" />
             <element signature="method#setMins#0;class#MainController#0" expanded="false" />
             <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
             <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -965,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,14 +877,7 @@
             <element signature="method#resize#0;class#MainController#0" expanded="false" />
             <element signature="method#setMins#0;class#MainController#0" expanded="false" />
             <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
             <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,76 +951,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hs_err_pid1137.log" />
-    <entry file="file://$PROJECT_DIR$/src/igno7um/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleConfig.MainController.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/URLGrep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/FileIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/Alert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="120">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#resize#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMins#0;class#MainController#0" expanded="false" />
-            <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
-            <element signature="method#showConsole#0;class#MainController#0" expanded="false" />
-            <element signature="method#close#0;class#MainController#0" expanded="false" />
-            <element signature="method#runImmobi#0;class#MainController#0" expanded="false" />
-            <element signature="method#runPrinter#0;class#MainController#0" expanded="false" />
-            <element signature="method#runEI#0;class#MainController#0" expanded="false" />
-            <element signature="method#runModelChange#0;class#MainController#0" expanded="false" />
-            <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
-            <element signature="method#settings#0;class#MainController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,72 +969,128 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/FileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/Service.java" />
+    <entry file="file://$PROJECT_DIR$/src/igno7um/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleConfig.MainController.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config.txt" />
+    <entry file="file://$PROJECT_DIR$/Config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/PrefSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/GlobalSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/EventTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#resize#0;class#MainController#0" expanded="false" />
+            <element signature="method#setMins#0;class#MainController#0" expanded="false" />
+            <element signature="method#setMaxs#0;class#MainController#0" expanded="false" />
+            <element signature="method#printSampleConfig#0;class#MainController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleConfig.igno7um.Configuration.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/SettingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/igno7um/URLGrep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-942">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
           <folding>
-            <element signature="e#1899#1900#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#printSampleConfig#0;class#Configuration#0" expanded="false" />
+            <element signature="method#extractConfigs#0;class#Configuration#0" expanded="false" />
             <element signature="method#getConfiguration#0;class#Configuration#0" expanded="false" />
             <element signature="method#addConfiguration#0;class#Configuration#0" expanded="false" />
             <element signature="method#deleteConfiguration#0;class#Configuration#0" expanded="false" />
             <element signature="method#printAll#0;class#Configuration#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/PrefSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/igno7um/EventTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="method#runServices#0;class#Configuration#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1292,6 +1159,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>javax.mail</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

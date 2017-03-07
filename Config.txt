@@ -1,0 +1,12 @@
+!This is a comment
+!igno7um.Configuration
+#IM
+IMMOBI1|url.com
+IMMOBI2|URL.COM
+#END_IM
+#EI
+#END_EI
+#PMK
+#END_PMK
+#MC
+#END_MC

@@ -1,5 +1,9 @@
 package igno7um;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 /**
  * Created by vfc90279 on 1/25/2017.
  * Gets configurations from config.txt file
@@ -10,9 +14,8 @@ public class Configuration {
 
     Configuration(){
         getConfiguration();
-        printAll();
-        printSampleConfig();
-
+        //printAll();
+        //printSampleConfig();
     }
 
     public void printSampleConfig(){
@@ -37,6 +40,7 @@ public class Configuration {
         public String[] name = new String[100];
         public String[] url = new String[100];
         public int length = 0;
+
     }
     class EITHREADS{
         public String[] name = new String[100];
@@ -70,7 +74,6 @@ public class Configuration {
     private String extractURL(String s){
         return s.substring(s.indexOf("|")+1);
     }
-
 
     private String[][] extractConfigs(String configName){
         String[][] strArray = new String[2][100];
@@ -137,7 +140,7 @@ public class Configuration {
             }
             file.close();
         }else
-            System.out.println("error");
+            System.out.println("Error Retrieving Configurations. File Does Not Exist or May be Corrupted");
     }
 
     // adds configuration to file
@@ -226,4 +229,39 @@ public class Configuration {
         }
     }
 
+    private GlobalSettings globalSettings = new GlobalSettings();
+    public void runServices(){
+        if(globalSettings.getImmobiSettings())
+            runImmobi();
+    }
+
+    public void runServices(int i){
+        if(i == 1 && globalSettings.getImmobiSettings()){
+            runImmobi();
+        }
+
+    }
+
+
+    private void runImmobi(){
+        for(int x = 0; x < immobi.length; x++){
+            System.out.println("testing" + x);
+            URLGrep urlGrep = new URLGrep(immobi.url[x]);
+
+            String errorString;
+            String tempString;
+            boolean errorFound = false;
+
+            while((tempString = urlGrep.findNext("Fail")) != null){
+                errorFound = true;
+                errorString = tempString;
+            }
+
+            if(errorFound){
+
+            }
+
+
+        }
+    }
 }

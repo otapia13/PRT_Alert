@@ -20,7 +20,7 @@ public class PrefSaver {
     public void setPref(String prefName, Boolean prefVal){
         prefs.putBoolean(prefName, prefVal);
     }
-    // returns -999 by default in order to handle
+    // returns -999 by default in order to handle exception
     public String getPref(String prefName){
         return prefs.get(prefName, "-999");
     }
@@ -30,12 +30,12 @@ public class PrefSaver {
         prefs.remove(prefName);
     }
 
-    //clear all preferances
+    //clear all preferences
     public void clearAll(){
         try {
             prefs.clear();
         } catch (BackingStoreException e) {
-            System.out.println("exception on clear all preffs");
+            System.out.println("Exception on clear all prefs");
         }
     }
 }
