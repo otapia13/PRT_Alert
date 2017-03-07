@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="added a lot off stuff...">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/DBConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/GlobalSettings.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$EITHREADS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$IMMOBI.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$MODELCHANGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration$PRINTER.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Configuration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/FileIO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Main.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/Settings.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PRT Alert/SettingsController.class" afterPath="" />
+    <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Configuration.java" afterPath="$PROJECT_DIR$/src/igno7um/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/EventTimer.java" afterPath="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Log.java" afterPath="$PROJECT_DIR$/src/igno7um/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Main.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Main.java" afterPath="$PROJECT_DIR$/src/igno7um/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/MainController.java" afterPath="$PROJECT_DIR$/src/igno7um/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/PrefSaver.java" afterPath="$PROJECT_DIR$/src/igno7um/PrefSaver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Settings.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Settings.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/SettingsController.java" afterPath="$PROJECT_DIR$/src/igno7um/SettingsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/URLGrep.java" afterPath="$PROJECT_DIR$/src/igno7um/URLGrep.java" />
     </list>
     <ignored path="PRT Alert.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,8 +94,8 @@
       <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+            <state relative-caret-position="78">
+              <caret line="242" column="5" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printSampleConfig#0;class#Configuration#0" expanded="false" />
@@ -598,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487814319392</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="trying to sync mac with pc">
+      <created>1488864246739</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1488864246739</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -680,7 +663,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added URLGrep" />
     <MESSAGE value="added a lot off stuff..." />
-    <option name="LAST_COMMIT_MESSAGE" value="added a lot off stuff..." />
+    <MESSAGE value="trying to sync mac with pc" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to sync mac with pc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/igno7um/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+        <state relative-caret-position="78">
+          <caret line="242" column="5" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#printSampleConfig#0;class#Configuration#0" expanded="false" />
