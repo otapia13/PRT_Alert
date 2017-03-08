@@ -1,5 +1,6 @@
 package igno7um;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,12 +12,13 @@ import java.net.URL;
  */
 
 public class Configuration {
-
     Configuration(){
         getConfiguration();
         //printAll();
         //printSampleConfig();
     }
+
+    private Log log = new Log();
 
     public void printSampleConfig(){
         FileIO sampleConfig = new FileIO("sampleConfig."+this.getClass().getName()+".txt");
@@ -37,27 +39,28 @@ public class Configuration {
     }
 
     class IMMOBI{
-        public String[] name = new String[100];
-        public String[] url = new String[100];
-        public int length = 0;
-
+        String[] name = new String[100];
+        String[] url = new String[100];
+        int length = 0;
+        int interval = 3;
     }
     class EITHREADS{
-        public String[] name = new String[100];
-        public String[] url = new String[100];
-        public int length = 0;
-
+        String[] name = new String[100];
+        String[] url = new String[100];
+        int length = 0;
+        int interval = 10;
     }
     class PRINTER{
-        public String[] name = new String[100];
-        public String[] url = new String[100];   //ip
-        public int length = 0;
+        String[] name = new String[100];
+        String[] url = new String[100];   //ip
+        int length = 0;
+        int interval = 10;
     }
     class MODELCHANGE{
-        public String[] name = new String[100];
-        public String[] url = new String[100];
-        public int length = 0;
-
+        String[] name = new String[100];
+        String[] url = new String[100];
+        int length = 0;
+        int interval = 10;
     }
 
     PRINTER printer = new PRINTER();
@@ -65,7 +68,7 @@ public class Configuration {
     IMMOBI immobi = new IMMOBI();
     EITHREADS ei = new EITHREADS();
 
-    FileIO file = new FileIO("Config.txt");
+    private FileIO file = new FileIO("Config.txt");
 
     private String extractName(String s){
 
@@ -73,6 +76,10 @@ public class Configuration {
     }
     private String extractURL(String s){
         return s.substring(s.indexOf("|")+1);
+    }
+
+    private void saveConfigs(){
+
     }
 
     private String[][] extractConfigs(String configName){
@@ -85,6 +92,24 @@ public class Configuration {
             while (!nextLine.contains(start)) {
                 nextLine = file.nextLine();
             }
+            String intevalName = extractName(nextLine);
+            int intervalTime = Integer.parseInt(extractURL(nextLine));
+            System.out.println(intevalName + " " + intervalTime);
+
+
+            switch(intevalName){
+                case "#IM":  {
+                    immobi.interval = intervalTime;
+                    globalSettings.setImmobiInterval(intervalTime);
+                    System.out.println("this ran");
+                    break;}
+                case "#EI":  ei.interval = intervalTime;
+                    break;
+                case "#PMK": printer.interval = intervalTime;
+                    break;
+                case "#MC":  modelChange.interval = intervalTime;
+            }
+
             nextLine = file.nextLine();
             while (!nextLine.contains(end)) {
                 strArray[0][x] = extractName(nextLine);
@@ -108,6 +133,7 @@ public class Configuration {
                     immobi.name[i] = myArray[0][i];
                     immobi.url[i] = myArray[1][i];
                     immobi.length = i+1;
+                    System.out.println(immobi.interval);
                 }
 
             }
@@ -117,7 +143,6 @@ public class Configuration {
                     ei.name[i] = myArray[0][i];
                     ei.url[i] = myArray[1][i];
                     ei.length = i+1;
-
                 }
             }
 
@@ -126,7 +151,6 @@ public class Configuration {
                     printer.name[i] = myArray[0][i];
                     printer.url[i] = myArray[1][i];
                     printer.length = i+1;
-
                 }
             }
 
@@ -135,7 +159,6 @@ public class Configuration {
                     modelChange.name[i] = myArray[0][i];
                     modelChange.url[i] = myArray[1][i];
                     modelChange.length = i+1;
-
                 }
             }
             file.close();
@@ -195,7 +218,7 @@ public class Configuration {
     }
 
 
-    public void printAll(){
+    /*public void printAll(){
         for(int i = 0; immobi.name[i] != null; i++){
             System.out.println(immobi.name[i]);
         }
@@ -227,38 +250,61 @@ public class Configuration {
         for(int i = 0; modelChange.url[i] != null; i++){
             System.out.println(modelChange.url[i]);
         }
-    }
+    }*/
 
     private GlobalSettings globalSettings = new GlobalSettings();
-    public void runServices(){
+    /*public void runServices(){
         if(globalSettings.getImmobiSettings())
             runImmobi();
-    }
+    }*/
 
-    public void runServices(int i){
+    void runServices(int i){
         if(i == 1 && globalSettings.getImmobiSettings()){
             runImmobi();
         }
 
     }
 
-
     private void runImmobi(){
+        log.write("IMMOBI invoked");
         for(int x = 0; x < immobi.length; x++){
-            System.out.println("testing" + x);
+            globalSettings.appendConsoleString(immobi.name[x] + " running...");
+            log.write(immobi.name[x] + " running...");
+
             URLGrep urlGrep = new URLGrep(immobi.url[x]);
 
-            String errorString;
+            String errorString = null;
             String tempString;
             boolean errorFound = false;
 
-            while((tempString = urlGrep.findNext("Fail")) != null){
+            while((tempString = urlGrep.findNext("Creating")) != null){
                 errorFound = true;
                 errorString = tempString;
             }
 
             if(errorFound){
+                globalSettings.appendConsoleString("Error Found: \n" + errorString);
+                log.write("Error Found: \n" + errorString);
+                String logTime = errorString.substring(0,errorString.indexOf(": "));    // extract error time as a string
+                Time time = new Time();
+                time.stringToTime(logTime);
+                Compare compare = new Compare();
+                if (compare.lastXmins(globalSettings.getImmobiInterval(), time)){
+                    globalSettings.appendConsoleString("Requesting to send Alert...");
+                    Alert alert = new Alert();
+                    System.out.println("LogsAnalixer: request to send alert");
+                    int alertStatus = alert.sendEmail("IMMOBI Error " + immobi.name[x], errorString);
+                    if(alertStatus == 1){
+                        globalSettings.appendConsoleString("Alert Sent");
+                    }else{
+                        globalSettings.appendConsoleString("Alert Failed to send: Code " + alertStatus);
+                    }
 
+                }else{
+                    globalSettings.appendConsoleString("Error Found is Old... Alert Not Sent");
+                }
+            }else{
+                globalSettings.appendConsoleString("No Error Found... " + immobi.name[x] + " done running...\n");
             }
 
 

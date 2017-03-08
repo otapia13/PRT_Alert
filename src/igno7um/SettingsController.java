@@ -31,7 +31,6 @@ public class SettingsController implements Initializable {
     private Configuration configs = new Configuration();
     private PrefSaver prefSaver = new PrefSaver();
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         intervalChoiceBox.setItems(FXCollections.observableArrayList(1,3,5,10,20,30,60));
@@ -42,6 +41,7 @@ public class SettingsController implements Initializable {
         ObservableList<Configuration.IMMOBI> data = (ObservableList<Configuration.IMMOBI>) configs.immobi;
         settingsTableView.setItems(data);
         nameCol.setCellValueFactory(new PropertyValueFactory<Configuration.IMMOBI, String[]>("name"));
+
 
 
     }

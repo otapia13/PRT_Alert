@@ -15,7 +15,10 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Calendar;
 import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainController implements Initializable{
 
@@ -27,7 +30,7 @@ public class MainController implements Initializable{
     MenuItem start, stop, close, emailSettings, immobiSettings, eiSettings, printerSettings,
     modelChangeSettings, showConsole, resize;
     @FXML
-    TextArea console;
+    public TextArea console;
     @FXML
     VBox consoleVBox;
     @FXML
@@ -142,6 +145,18 @@ public class MainController implements Initializable{
         }
     }
 
+    private void updateConsole(){
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                if(consoleVBox.isVisible()){
+                    console.setText(globalSettings.getGlobalConsoleStr());
+                }
+            }
+        }, 0, 500);
+    }
+
     public void emailSettings(){
         settings("Email Settings");
     }
@@ -181,8 +196,9 @@ public class MainController implements Initializable{
     }
 
     public void runService(){
-        Configuration c = new Configuration();
-        c.runServices();
+        //EventTimer c = new EventTimer();
+        //c.start();
+        console.setText("testing");
         EventTimer et = new EventTimer();
         et.start();
     }
@@ -230,6 +246,10 @@ public class MainController implements Initializable{
         globalSettings.EISettings(eiMenuItem.isSelected());
         globalSettings.PrinterSettings(printerMenuItem.isSelected());
         globalSettings.ModelSettings(modelChangeMenuItem.isSelected());
+
+        updateConsole();
+
+
 
         //get saved states and update them.
     }

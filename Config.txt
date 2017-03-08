@@ -1,12 +1,12 @@
 !This is a comment
 !igno7um.Configuration
-#IM
-IMMOBI1|url.com
-IMMOBI2|URL.COM
+#IM|1
+IMMOBI1|http://xpp58266/showFile?A1DBThread.log
+IMMOBI2|http://xpp58110/showFile?A1DBThread.log
 #END_IM
-#EI
+#EI|10
 #END_EI
-#PMK
+#PMK|10
 #END_PMK
-#MC
+#MC|10
 #END_MC

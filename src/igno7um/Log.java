@@ -11,10 +11,13 @@ public class Log {
 
     private final static Logger logger = Logger.getLogger(Logger.class.getName());
     private static FileHandler fh = null;
-    private static String title = "myLog.log";
+    private static String title = "Log.log";
 
     Log(String s){
         title = s;
+        this.init();
+    }
+    Log(){
         this.init();
     }
 
@@ -34,6 +37,6 @@ public class Log {
 
     // pass message to write. level from 0 - info, 1 - warning, 2 - severe
     public void write(String msg){
-        logger.log(Level.INFO, msg);
+        logger.log(Level.INFO, msg + "\n");
     }
 }

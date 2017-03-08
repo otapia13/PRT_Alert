@@ -46,6 +46,7 @@ public class EventTimer {
 
 
     Configuration config = new Configuration();
+    GlobalSettings globalSettings = new GlobalSettings();
 
     private int x = 0;
     public void start(){
@@ -59,7 +60,8 @@ public class EventTimer {
 
             public void activator(){
                 x++;
-                if (x%imInterval == 0){
+                System.out.println("this is running" + globalSettings.getImmobiInterval());
+                if (x%globalSettings.getImmobiInterval() == 0){
                     config.runServices(1);
                     System.out.println("this ran" + x);
                 }
