@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73be3af4-f297-4e99-9e13-355cd07101ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/Compare.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/igno7um/Time.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config.txt" afterPath="$PROJECT_DIR$/Config.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PRT Alert.iml" afterPath="$PROJECT_DIR$/PRT Alert.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Configuration.java" afterPath="$PROJECT_DIR$/src/igno7um/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/EventTimer.java" afterPath="$PROJECT_DIR$/src/igno7um/EventTimer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/GlobalSettings.java" afterPath="$PROJECT_DIR$/src/igno7um/GlobalSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Log.java" afterPath="$PROJECT_DIR$/src/igno7um/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Main.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Main.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/MainController.java" afterPath="$PROJECT_DIR$/src/igno7um/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/Settings.fxml" afterPath="$PROJECT_DIR$/src/igno7um/Settings.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/igno7um/SettingsController.java" afterPath="$PROJECT_DIR$/src/igno7um/SettingsController.java" />
     </list>
     <ignored path="PRT Alert.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -621,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488864246739</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="console working... need to work on TableView">
+      <created>1488958192032</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1488958192032</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -704,7 +696,8 @@
     <MESSAGE value="added URLGrep" />
     <MESSAGE value="added a lot off stuff..." />
     <MESSAGE value="trying to sync mac with pc" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to sync mac with pc" />
+    <MESSAGE value="console working... need to work on TableView" />
+    <option name="LAST_COMMIT_MESSAGE" value="console working... need to work on TableView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,6 +939,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -964,6 +958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -971,6 +966,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2276#2277#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2347#2348#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -992,6 +994,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,6 +1010,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,6 +1086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
